@@ -1,0 +1,31 @@
+/*
+O Break é uma expreção que vai gerar uma interrupção na execução.
+O continue, quando é executado dentro de um loop,
+vai parar apenas aquela execução, mas não encerra o loop.
+*/
+
+let n = 0;
+let max = 1000;
+let pares = 0;
+
+while (n < max){
+    console.log("CBF Cursos - " + n)
+    if(n > 10){
+        break
+    }
+    n++
+}
+
+console.log("Fim do programa");
+
+//
+
+for(let i = 0; i < max; i++){
+    if (i%2 != 0) {
+        continue
+       
+    }
+     pares++
+}
+console.log("Quantidade de pares: " + pares);
+console.log("Fim do programa");
