@@ -1,0 +1,19 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "Repositório dedicado ao estudo da linguagem Javascript",
+  "main": "001.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnicaGabrielli/javascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnicaGabrielli/javascript/issues"
+  },
+  "homepage": "https://github.com/AnicaGabrielli/javascript#readme"
+}
