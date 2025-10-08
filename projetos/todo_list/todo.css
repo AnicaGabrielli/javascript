@@ -1,0 +1,37 @@
+body{
+    
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+}
+#pegarTarefa{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+}
+input{
+    width: 70%;
+    border-right: 0px !important;
+    border: 1px dashed;
+}
+button{
+    width: 30%;
+    font-size: 10px;
+    border: 0px ;
+    background-color: crimson;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+#lista{
+    background-color: chartreuse;
+    margin-top: 30px;
+    width: 100%;
+}
+.caixaUnica{
+
+    display: flex;
+    width: 10%;
+    flex-direction: row;
+    justify-content:start;
+}

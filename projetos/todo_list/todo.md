@@ -1,0 +1,4 @@
+- criar um campo de entrada e um botão dentro de uma div
+- criar um evento de click para pegar o valor do campo
+- criar um elemento div para colocar os checkbox adicionados
+- ou pegar um elemento externo para fazer o click
