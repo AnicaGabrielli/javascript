@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            align-content: flex-start;
+        }
+
+        .curso {
+            width: 180px;
+            height: 120px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .curso::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: left 0.5s ease;
+        }
+
+        .curso:hover::before {
+            left: 100%;
+        }
+
+        .curso:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+        }
+
+        .curso p {
+            margin: 0;
+            z-index: 1;
+        }
+
+        /* Gradientes diferentes para c1 e c2 */
+        .c1 {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .c2 {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        /* Estilos individuais opcionais */
+        #c1 { background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%); }
+        #c2 { background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%); }
+        #c3 { background: linear-gradient(135deg, #f7b731 0%, #f5a623 100%); }
+        #c4 { background: linear-gradient(135deg, #a8e6cf 0%, #3d84a8 100%); }
+        #c5 { background: linear-gradient(135deg, #61dafb 0%, #0088cc 100%); }
+        #c6 { background: linear-gradient(135deg, #00758f 0%, #004d61 100%); }
+        #c7 { background: linear-gradient(135deg, #659999 0%, #004d61 100%); }
+        #c8 { background: linear-gradient(135deg, #822e81 0%, #512c62 100%); }
+        #c9 { background: linear-gradient(135deg, #00979d 0%, #006064 100%); }
+        #c10 { background: linear-gradient(135deg, #61dafb 0%, #005f8f 100%); }
+        #c11 { background: linear-gradient(135deg, #ffd43b 0%, #306998 100%); }
+        #c12 { background: linear-gradient(135deg, #c51a4a 0%, #8b1538 100%); }
+
+        .destaque{
+            font-size: 1px !important;
+        }
+
+        @media (max-width: 600px) {
+            .curso {
+                width: 150px;
+                height: 100px;
+                font-size: 16px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="c1" class="curso c1" onclick="msg()"><p>HTML</p></div> 
+    <div id="c2" class="curso c1"><p>CSS</p></div> 
+    <div id="c3" class="curso c1">Javascript</div> 
+    <div id="c4" class="curso c1">PHP</div> 
+    <div id="c5" class="curso c1">React</div> 
+    <div id="c6" class="curso c1">MySQL</div> 
+    <div id="c7" class="curso c2">C++</div>
+    <div id="c8" class="curso c2">C#</div>
+    <div id="c9" class="curso c2">Arduino</div> 
+    <div id="c10" class="curso c2">React Native</div> 
+    <div id="c11" class="curso c2">Python</div>
+    <div id="c12" class="curso c2">Raspberry</div>
+    <script src="034.js"></script>
+</body>
+</html>
