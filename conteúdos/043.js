@@ -8,6 +8,13 @@ const btnAdicionarNovoCursoAntes = document.getElementById("btnAdicionarNovoCurs
 const btnAdicionarNovoCursoDepois = document.getElementById("btnAdicionarNovoCursoDepois");
 const nomeCurso = document.getElementById("nomeCurso");
 let indice = 0;
+
+const tirarSeleção=()=>{
+    const cursoSelecionado = [...document.querySelectorAll(".selecionado")]
+    cursoSelecionado.map((el)=>{
+        el.classList.remove("selecionado");
+    })
+}
 const criarNovoCurso=(curso)=>{
     const novoElemento = document.createElement("div");
     novoElemento.setAttribute("id",`c${indice}`);
@@ -23,6 +30,10 @@ const criarNovoCurso=(curso)=>{
 
     comandos.appendChild(rb);
     novoElemento.appendChild(comandos)
+    novoElemento.addEventListener("click",(evt)=>{
+        tirarSeleção();
+        evt.target.classList.toggle("selecionado");
+    })
     return novoElemento;
 }
 cursos.map((el, chave)=>{
